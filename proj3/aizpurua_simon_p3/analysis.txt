@@ -1,0 +1,7 @@
+// Simon Aizpurua
+
+Stack<T>::clear()
+
+Complexity is O(n) because the function will iterate through every element until the linked list is cleared.
+It is linear because the more elements, the more times you have to remove the node from the list.
+

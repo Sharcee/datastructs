@@ -1,0 +1,2 @@
+g++ -c -std=c++11 -Wall -Werror -pedantic test_list.cpp List.h List.hpp
+makefile:11: recipe for target 'List.o' failed

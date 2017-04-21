@@ -1,0 +1,6 @@
+Stack<T>::clear()
+
+
+Complexity is O(n). Function depends on std::list<T>::clear() which 
+iterates through the linked list until every element has been removed, 
+which is clearly linear.

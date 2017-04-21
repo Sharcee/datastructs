@@ -1,0 +1,42 @@
+Analysis.txt -- Simon Aizpurua
+Date 06/09/2016
+COP4350
+
+Worst-case run-time complexities of reverse and remove_if()
+
+Reverse()
+
+If the list being passed is not empty, then..
+  current := head
+  while the current node is not pointing to nullptr
+    swap the next node and the previous node values
+    set the current node to the previous node
+
+  swap head and tail nodes
+
+Analysis:
+  Worst case scenario results in O(n) time due to assignment statements being
+  constants and the loop takes O(n) due to the amount of items in the list.
+
+remove_if()
+
+  For all elements subset of the relation PREDICATE...
+  Do
+    Erase:
+      create a node of the current value in the list
+      create an iterator of the next value
+      point the previous node to the next node.
+          x-1 points to x+1
+      point the next node to the previous node.
+          x+1 points to x-1
+      delete the current node
+      decrease the size of the list.
+      move to the next node.
+  end
+
+Analysis:
+  Worst case scenario would be O(n) due to assignments being constants that can
+  be removed and result in an O(n) evaluation due to the amount of items
+  that could potentially be removed
+
+    i.e every value results in true PREDICATE and therefore all are removed.

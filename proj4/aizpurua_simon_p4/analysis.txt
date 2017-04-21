@@ -1,0 +1,4 @@
+makeEmpty()
+
+  This function is bounded by O(n) as it is linerally dependent on the amount
+  of nodes found within the tree.
